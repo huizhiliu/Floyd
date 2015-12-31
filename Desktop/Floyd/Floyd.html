@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Floyd</title>
+</head>
+<body>
+	<script>
+		var Floyd = function(a){
+		  var d = a;
+		  for(var k=0;k<d.length;k++){
+		     for(var i=0;i<d.length;i++){
+		        for(var j=0;j<d.length;j++){
+		          d[i][j] = Math.min(d[i][j],d[i][k]+d[k][j])
+		        }
+		     }
+  		   }
+  		  return d
+		}
+	</script>
+</body>
+</html>
